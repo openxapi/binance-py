@@ -1,0 +1,6 @@
+__pycache__/
+.openapi-generator/
+.openapi-generator-ignore
+*.egg-info/
+.venv/
+dist/

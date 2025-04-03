@@ -1,0 +1,37 @@
+# PmarginGetMarginForceOrdersV1RespRowsInner
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**avg_price** | **str** |  | [optional] 
+**executed_qty** | **str** |  | [optional] 
+**order_id** | **int** |  | [optional] 
+**price** | **str** |  | [optional] 
+**qty** | **str** |  | [optional] 
+**side** | **str** |  | [optional] 
+**symbol** | **str** |  | [optional] 
+**time_in_force** | **str** |  | [optional] 
+**updated_time** | **int** |  | [optional] 
+
+## Example
+
+```python
+from binance.derivatives.pmargin.models.pmargin_get_margin_force_orders_v1_resp_rows_inner import PmarginGetMarginForceOrdersV1RespRowsInner
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of PmarginGetMarginForceOrdersV1RespRowsInner from a JSON string
+pmargin_get_margin_force_orders_v1_resp_rows_inner_instance = PmarginGetMarginForceOrdersV1RespRowsInner.from_json(json)
+# print the JSON string representation of the object
+print(PmarginGetMarginForceOrdersV1RespRowsInner.to_json())
+
+# convert the object into a dict
+pmargin_get_margin_force_orders_v1_resp_rows_inner_dict = pmargin_get_margin_force_orders_v1_resp_rows_inner_instance.to_dict()
+# create an instance of PmarginGetMarginForceOrdersV1RespRowsInner from a dict
+pmargin_get_margin_force_orders_v1_resp_rows_inner_from_dict = PmarginGetMarginForceOrdersV1RespRowsInner.from_dict(pmargin_get_margin_force_orders_v1_resp_rows_inner_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
