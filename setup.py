@@ -8,7 +8,7 @@ with open(
 ) as fh:
     requirements = fh.readlines()
 
-NAME = "binance-py"
+NAME = "openxapi-binance"
 VERSION = "0.1.0"
 PYTHON_REQUIRES = ">= 3.8"
 
@@ -19,7 +19,7 @@ setup(
     author="OpenXAPI",
     author_email="contact@openxapi.com",
     url="https://github.com/openxapi/binance-py",
-    keywords=["OpenAPI", "binance", "binance-python"],
+    keywords=["OpenXAPI","OpenAPI", "binance", "binance-python"],
     install_requires=[req for req in requirements if req.strip()],
     packages=find_packages(exclude=["*.test"]),
     include_package_data=True,
@@ -28,5 +28,5 @@ setup(
     long_description="""\
     Python client for Binance API
     """,  # noqa: E501
-    package_data={"binance-py": ["py.typed"]},
+    package_data={"openxapi-binance": ["py.typed"]},
 )

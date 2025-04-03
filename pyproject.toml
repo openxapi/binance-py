@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "binance-py"
+name = "openxapi-binance"
 version = "0.1.0"
 description = "Python client for Binance API"
 authors = ["OpenXAPI"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/openxapi/binance-py"
-keywords = ["OpenAPI", "binance", "binance-python"]
+keywords = ["OpenXAPI","OpenAPI", "binance", "binance-python"]
 include = ["py.typed"]
 
 [tool.poetry.dependencies]

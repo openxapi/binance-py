@@ -15,7 +15,7 @@ Python 3.8+
 ## Installation & Usage
 
 ```base
-pip install binance-py
+pip install openxapi-binance
 ```
 
 ## Getting Started
