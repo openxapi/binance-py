@@ -10,7 +10,7 @@ Please do not edit the generated code manually, but rather regenerate it from [O
 ## Supported APIs
 
 | Product | Supported | Module | Documentation |
-|---------|-----------|--------|---------------|
+|---------|:-----------:|--------|---------------|
 | Spot | ✅ | binance.spot | [Spot API](binance/spot_README.md) |
 | USD-M Futures | ✅ | binance.derivatives.umfutures | [USD-M Futures API](binance/derivatives/umfutures_README.md) |
 | COIN-M Futures | ✅ | binance.derivatives.cmfutures | [COIN-M Futures API](binance/derivatives/cmfutures_README.md) |
