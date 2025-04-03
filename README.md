@@ -7,6 +7,24 @@ Please do not edit the generated code manually, but rather regenerate it from [O
 - API version: 0.1.0
 - Package version: 0.1.0
 
+## Supported APIs
+
+| Product | Supported | Module | Documentation |
+|---------|-----------|--------|---------------|
+| Spot | ✅ | binance.spot | [Spot API](binance/spot_README.md) |
+| USD-M Futures | ✅ | binance.derivatives.umfutures | [USD-M Futures API](binance/derivatives/umfutures_README.md) |
+| COIN-M Futures | ✅ | binance.derivatives.cmfutures | [COIN-M Futures API](binance/derivatives/cmfutures_README.md) |
+| Options | ✅ | binance.derivatives.options | [Options API](binance/derivatives/options_README.md) |
+| Porfolio Margin | ✅ | binance.derivatives.pmargin | [Portfolio Margin API](binance/derivatives/pmargin_README.md) |
+| Porfolio Margin Pro | ✅ | binance.derivatives.pmarginpro | [Portfolio Margin Pro API](binance/derivatives/pmarginpro_README.md) |
+| Futures Data | ✅ | binance.derivatives.futuresdata | [Futures Data API](binance/derivatives/futuresdata_README.md) |
+| Margin | ✅ | binance.margin | [Margin API](binance/margin_README.md) |
+| Algo | ✅ | binance.algo | [Algo API](binance/algo_README.md) |
+| Wallet | ✅ | binance.wallet | [Wallet API](binance/wallet_README.md) |
+| Copy Trading | ✅ | binance.copytrading | [Copy Trading API](binance/copytrading_README.md) |
+| Sub-Account | ✅ | binance.subaccount | [Sub-Account API](binance/subaccount_README.md) |
+
+
 ## Requirements.
 
 Python 3.8+
