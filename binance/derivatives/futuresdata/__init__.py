@@ -14,11 +14,10 @@
 """  # noqa: E501
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # import apis into sdk package
 from binance.derivatives.futuresdata.api.market_data_api import MarketDataApi
-from binance.derivatives.futuresdata.api.v1_api import V1Api
 
 # import ApiClient
 from binance.derivatives.futuresdata.api_response import ApiResponse

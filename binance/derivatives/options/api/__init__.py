@@ -7,5 +7,4 @@ from binance.derivatives.options.api.market_maker_block_trade_api import MarketM
 from binance.derivatives.options.api.market_maker_endpoints_api import MarketMakerEndpointsApi
 from binance.derivatives.options.api.trade_api import TradeApi
 from binance.derivatives.options.api.user_data_streams_api import UserDataStreamsApi
-from binance.derivatives.options.api.v1_api import V1Api
 

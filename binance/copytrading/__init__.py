@@ -14,11 +14,10 @@
 """  # noqa: E501
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # import apis into sdk package
 from binance.copytrading.api.future_copy_trading_api import FutureCopyTradingApi
-from binance.copytrading.api.v1_api import V1Api
 
 # import ApiClient
 from binance.copytrading.api_response import ApiResponse

@@ -14,12 +14,11 @@
 """  # noqa: E501
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # import apis into sdk package
 from binance.algo.api.future_algo_api import FutureAlgoApi
 from binance.algo.api.spot_algo_api import SpotAlgoApi
-from binance.algo.api.v1_api import V1Api
 
 # import ApiClient
 from binance.algo.api_response import ApiResponse

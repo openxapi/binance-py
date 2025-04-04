@@ -14,13 +14,11 @@
 """  # noqa: E501
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # import apis into sdk package
 from binance.derivatives.pmarginpro.api.account_api import AccountApi
 from binance.derivatives.pmarginpro.api.market_data_api import MarketDataApi
-from binance.derivatives.pmarginpro.api.v1_api import V1Api
-from binance.derivatives.pmarginpro.api.v2_api import V2Api
 
 # import ApiClient
 from binance.derivatives.pmarginpro.api_response import ApiResponse

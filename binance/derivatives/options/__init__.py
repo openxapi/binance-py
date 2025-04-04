@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # import apis into sdk package
 from binance.derivatives.options.api.account_api import AccountApi
@@ -23,7 +23,6 @@ from binance.derivatives.options.api.market_maker_block_trade_api import MarketM
 from binance.derivatives.options.api.market_maker_endpoints_api import MarketMakerEndpointsApi
 from binance.derivatives.options.api.trade_api import TradeApi
 from binance.derivatives.options.api.user_data_streams_api import UserDataStreamsApi
-from binance.derivatives.options.api.v1_api import V1Api
 
 # import ApiClient
 from binance.derivatives.options.api_response import ApiResponse

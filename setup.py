@@ -7,9 +7,17 @@ with open(
     os.path.join(os.path.dirname(__file__), "requirements.txt"), "r"
 ) as fh:
     requirements = fh.readlines()
+# get version from pyproject.toml
+with open("pyproject.toml", "r") as fh:
+    for line in fh:
+        if line.startswith("version ="):
+            VERSION = line.split("=")[1].strip().replace('"', '')
+            break
+
+if VERSION is None:
+    raise ValueError("Version not found in pyproject.toml")
 
 NAME = "openxapi-binance"
-VERSION = "0.1.0"
 PYTHON_REQUIRES = ">= 3.8"
 
 setup(

@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 # import apis into sdk package
 from binance.wallet.api.account_api import AccountApi
@@ -22,9 +22,6 @@ from binance.wallet.api.asset_api import AssetApi
 from binance.wallet.api.capital_api import CapitalApi
 from binance.wallet.api.others_api import OthersApi
 from binance.wallet.api.travel_rule_api import TravelRuleApi
-from binance.wallet.api.v1_api import V1Api
-from binance.wallet.api.v2_api import V2Api
-from binance.wallet.api.v3_api import V3Api
 
 # import ApiClient
 from binance.wallet.api_response import ApiResponse
