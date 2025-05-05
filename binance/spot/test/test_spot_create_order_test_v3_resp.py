@@ -35,7 +35,7 @@ class TestSpotCreateOrderTestV3Resp(unittest.TestCase):
         model = SpotCreateOrderTestV3Resp()
         if include_optional:
             return SpotCreateOrderTestV3Resp(
-                discount = binance.spot.models.spot_create_order_test_v3_resp_discount.SpotCreateOrderTestV3Resp_discount(
+                discount = binance.spot.models.get_account_commission_v3_resp_discount.GetAccountCommissionV3Resp_discount(
                     discount = '', 
                     discount_asset = '', 
                     enabled_for_account = True, 

@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field
 from typing import Any, ClassVar, Dict, List, Optional
-from binance.spot.models.spot_create_order_test_v3_resp_discount import SpotCreateOrderTestV3RespDiscount
+from binance.spot.models.get_account_commission_v3_resp_discount import GetAccountCommissionV3RespDiscount
 from binance.spot.models.spot_create_order_test_v3_resp_standard_commission_for_order import SpotCreateOrderTestV3RespStandardCommissionForOrder
 from typing import Optional, Set
 from typing_extensions import Self
@@ -28,7 +28,7 @@ class SpotCreateOrderTestV3Resp(BaseModel):
     """
     SpotCreateOrderTestV3Resp
     """ # noqa: E501
-    discount: Optional[SpotCreateOrderTestV3RespDiscount] = None
+    discount: Optional[GetAccountCommissionV3RespDiscount] = None
     standard_commission_for_order: Optional[SpotCreateOrderTestV3RespStandardCommissionForOrder] = Field(default=None, alias="standardCommissionForOrder")
     tax_commission_for_order: Optional[SpotCreateOrderTestV3RespStandardCommissionForOrder] = Field(default=None, alias="taxCommissionForOrder")
     __properties: ClassVar[List[str]] = ["discount", "standardCommissionForOrder", "taxCommissionForOrder"]
@@ -93,7 +93,7 @@ class SpotCreateOrderTestV3Resp(BaseModel):
             return cls.model_validate(obj)
 
         _obj = cls.model_validate({
-            "discount": SpotCreateOrderTestV3RespDiscount.from_dict(obj["discount"]) if obj.get("discount") is not None else None,
+            "discount": GetAccountCommissionV3RespDiscount.from_dict(obj["discount"]) if obj.get("discount") is not None else None,
             "standardCommissionForOrder": SpotCreateOrderTestV3RespStandardCommissionForOrder.from_dict(obj["standardCommissionForOrder"]) if obj.get("standardCommissionForOrder") is not None else None,
             "taxCommissionForOrder": SpotCreateOrderTestV3RespStandardCommissionForOrder.from_dict(obj["taxCommissionForOrder"]) if obj.get("taxCommissionForOrder") is not None else None
         })

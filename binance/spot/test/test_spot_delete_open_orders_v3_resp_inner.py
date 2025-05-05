@@ -73,7 +73,7 @@ class TestSpotDeleteOpenOrdersV3RespInner(unittest.TestCase):
                         type = '', )
                     ],
                 orders = [
-                    binance.spot.models.spot_create_order_list_oco_v3_resp_orders_inner.SpotCreateOrderListOcoV3Resp_orders_inner(
+                    binance.spot.models.create_margin_order_oco_v1_resp_orders_inner.CreateMarginOrderOcoV1Resp_orders_inner(
                         client_order_id = '', 
                         order_id = 56, 
                         symbol = '', )

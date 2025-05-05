@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from binance.spot.models.spot_create_order_v3_resp_fills_inner import SpotCreateOrderV3RespFillsInner
+from binance.spot.models.margin_create_margin_order_v1_resp_fills_inner import MarginCreateMarginOrderV1RespFillsInner
 from typing import Optional, Set
 from typing_extensions import Self
 
@@ -30,7 +30,7 @@ class SpotCreateOrderV3Resp(BaseModel):
     client_order_id: Optional[StrictStr] = Field(default=None, alias="clientOrderId")
     cummulative_quote_qty: Optional[StrictStr] = Field(default=None, alias="cummulativeQuoteQty")
     executed_qty: Optional[StrictStr] = Field(default=None, alias="executedQty")
-    fills: Optional[List[SpotCreateOrderV3RespFillsInner]] = None
+    fills: Optional[List[MarginCreateMarginOrderV1RespFillsInner]] = None
     order_id: Optional[StrictInt] = Field(default=None, alias="orderId")
     order_list_id: Optional[StrictInt] = Field(default=None, alias="orderListId")
     orig_qty: Optional[StrictStr] = Field(default=None, alias="origQty")
@@ -107,7 +107,7 @@ class SpotCreateOrderV3Resp(BaseModel):
             "clientOrderId": obj.get("clientOrderId"),
             "cummulativeQuoteQty": obj.get("cummulativeQuoteQty"),
             "executedQty": obj.get("executedQty"),
-            "fills": [SpotCreateOrderV3RespFillsInner.from_dict(_item) for _item in obj["fills"]] if obj.get("fills") is not None else None,
+            "fills": [MarginCreateMarginOrderV1RespFillsInner.from_dict(_item) for _item in obj["fills"]] if obj.get("fills") is not None else None,
             "orderId": obj.get("orderId"),
             "orderListId": obj.get("orderListId"),
             "origQty": obj.get("origQty"),

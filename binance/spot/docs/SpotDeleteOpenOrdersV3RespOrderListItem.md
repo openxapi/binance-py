@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **list_status_type** | **str** |  | [optional] 
 **order_list_id** | **int** |  | [optional] 
 **order_reports** | [**List[SpotDeleteOpenOrdersV3RespOrderItem]**](SpotDeleteOpenOrdersV3RespOrderItem.md) |  | [optional] 
-**orders** | [**List[SpotCreateOrderListOcoV3RespOrdersInner]**](SpotCreateOrderListOcoV3RespOrdersInner.md) |  | [optional] 
+**orders** | [**List[CreateMarginOrderOcoV1RespOrdersInner]**](CreateMarginOrderOcoV1RespOrdersInner.md) |  | [optional] 
 **symbol** | **str** |  | [optional] 
 **transaction_time** | **int** |  | [optional] 
 

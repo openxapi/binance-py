@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **client_order_id** | **str** |  | [optional] 
 **cummulative_quote_qty** | **str** |  | [optional] 
 **executed_qty** | **str** |  | [optional] 
-**fills** | [**List[SpotCreateOrderV3RespFillsInner]**](SpotCreateOrderV3RespFillsInner.md) |  | [optional] 
+**fills** | [**List[MarginCreateMarginOrderV1RespFillsInner]**](MarginCreateMarginOrderV1RespFillsInner.md) |  | [optional] 
 **order_id** | **int** |  | [optional] 
 **order_list_id** | **int** |  | [optional] 
 **orig_qty** | **str** |  | [optional] 

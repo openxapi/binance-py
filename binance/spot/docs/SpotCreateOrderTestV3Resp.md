@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**discount** | [**SpotCreateOrderTestV3RespDiscount**](SpotCreateOrderTestV3RespDiscount.md) |  | [optional] 
+**discount** | [**GetAccountCommissionV3RespDiscount**](GetAccountCommissionV3RespDiscount.md) |  | [optional] 
 **standard_commission_for_order** | [**SpotCreateOrderTestV3RespStandardCommissionForOrder**](SpotCreateOrderTestV3RespStandardCommissionForOrder.md) |  | [optional] 
 **tax_commission_for_order** | [**SpotCreateOrderTestV3RespStandardCommissionForOrder**](SpotCreateOrderTestV3RespStandardCommissionForOrder.md) |  | [optional] 
 

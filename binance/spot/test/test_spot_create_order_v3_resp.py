@@ -39,7 +39,7 @@ class TestSpotCreateOrderV3Resp(unittest.TestCase):
                 cummulative_quote_qty = '',
                 executed_qty = '',
                 fills = [
-                    binance.spot.models.spot_create_order_v3_resp_fills_inner.SpotCreateOrderV3Resp_fills_inner(
+                    binance.spot.models.margin_create_margin_order_v1_resp_fills_inner.MarginCreateMarginOrderV1Resp_fills_inner(
                         commission = '', 
                         commission_asset = '', 
                         price = '', 

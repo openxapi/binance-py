@@ -466,7 +466,7 @@ class Configuration:
                "OS: {env}\n"\
                "Python Version: {pyversion}\n"\
                "Version of the API: 0.1.0\n"\
-               "SDK Package Version: 0.1.1".\
+               "SDK Package Version: 0.2.0".\
                format(env=sys.platform, pyversion=sys.version)
 
     def get_host_settings(self) -> List[HostSetting]:
@@ -477,10 +477,6 @@ class Configuration:
         return [
             {
                 'url': "https://api.binance.com",
-                'description': "Binance Spot API Server",
-            },
-            {
-                'url': "https://api-gcp.binance.com",
                 'description': "Binance Spot API Server",
             },
             {
@@ -497,6 +493,10 @@ class Configuration:
             },
             {
                 'url': "https://api4.binance.com",
+                'description': "Binance Spot API Server",
+            },
+            {
+                'url': "https://api-gcp.binance.com",
                 'description': "Binance Spot API Server",
             }
         ]

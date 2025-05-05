@@ -19,7 +19,7 @@ import json
 
 from pydantic import BaseModel, ConfigDict, Field, StrictInt, StrictStr
 from typing import Any, ClassVar, Dict, List, Optional
-from binance.spot.models.spot_create_order_list_oco_v3_resp_orders_inner import SpotCreateOrderListOcoV3RespOrdersInner
+from binance.spot.models.create_margin_order_oco_v1_resp_orders_inner import CreateMarginOrderOcoV1RespOrdersInner
 from binance.spot.models.spot_delete_open_orders_v3_resp_order_item import SpotDeleteOpenOrdersV3RespOrderItem
 from typing import Optional, Set
 from typing_extensions import Self
@@ -34,7 +34,7 @@ class SpotDeleteOpenOrdersV3RespOrderListItem(BaseModel):
     list_status_type: Optional[StrictStr] = Field(default=None, alias="listStatusType")
     order_list_id: Optional[StrictInt] = Field(default=None, alias="orderListId")
     order_reports: Optional[List[SpotDeleteOpenOrdersV3RespOrderItem]] = Field(default=None, alias="orderReports")
-    orders: Optional[List[SpotCreateOrderListOcoV3RespOrdersInner]] = None
+    orders: Optional[List[CreateMarginOrderOcoV1RespOrdersInner]] = None
     symbol: Optional[StrictStr] = None
     transaction_time: Optional[StrictInt] = Field(default=None, alias="transactionTime")
     __properties: ClassVar[List[str]] = ["contingencyType", "listClientOrderId", "listOrderStatus", "listStatusType", "orderListId", "orderReports", "orders", "symbol", "transactionTime"]
@@ -110,7 +110,7 @@ class SpotDeleteOpenOrdersV3RespOrderListItem(BaseModel):
             "listStatusType": obj.get("listStatusType"),
             "orderListId": obj.get("orderListId"),
             "orderReports": [SpotDeleteOpenOrdersV3RespOrderItem.from_dict(_item) for _item in obj["orderReports"]] if obj.get("orderReports") is not None else None,
-            "orders": [SpotCreateOrderListOcoV3RespOrdersInner.from_dict(_item) for _item in obj["orders"]] if obj.get("orders") is not None else None,
+            "orders": [CreateMarginOrderOcoV1RespOrdersInner.from_dict(_item) for _item in obj["orders"]] if obj.get("orders") is not None else None,
             "symbol": obj.get("symbol"),
             "transactionTime": obj.get("transactionTime")
         })

@@ -17,6 +17,11 @@ with open("pyproject.toml", "r") as fh:
 if VERSION is None:
     raise ValueError("Version not found in pyproject.toml")
 
+about = {}
+
+with open("README.md", "r") as fh:
+    about["long_description"] = fh.read()
+
 NAME = "openxapi-binance"
 PYTHON_REQUIRES = ">= 3.8"
 
@@ -33,8 +38,6 @@ setup(
     include_package_data=True,
     license="MIT",
     long_description_content_type='text/markdown',
-    long_description="""\
-    Python client for Binance API
-    """,  # noqa: E501
+    long_description=about["long_description"],
     package_data={"openxapi-binance": ["py.typed"]},
 )
