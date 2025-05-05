@@ -1,74 +1,74 @@
-# binance.cmfutures.CoinMarginedFuturesApi
+# binance.cmfutures.FuturesApi
 
 All URIs are relative to *https://dapi.binance.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_batch_orders_v1**](CoinMarginedFuturesApi.md#create_batch_orders_v1) | **POST** /dapi/v1/batchOrders | Place Multiple Orders(TRADE)
-[**create_countdown_cancel_all_v1**](CoinMarginedFuturesApi.md#create_countdown_cancel_all_v1) | **POST** /dapi/v1/countdownCancelAll | Auto-Cancel All Open Orders (TRADE)
-[**create_leverage_v1**](CoinMarginedFuturesApi.md#create_leverage_v1) | **POST** /dapi/v1/leverage | Change Initial Leverage (TRADE)
-[**create_listen_key_v1**](CoinMarginedFuturesApi.md#create_listen_key_v1) | **POST** /dapi/v1/listenKey | Start User Data Stream (USER_STREAM)
-[**create_margin_type_v1**](CoinMarginedFuturesApi.md#create_margin_type_v1) | **POST** /dapi/v1/marginType | Change Margin Type (TRADE)
-[**create_order_v1**](CoinMarginedFuturesApi.md#create_order_v1) | **POST** /dapi/v1/order | New Order (TRADE)
-[**create_position_margin_v1**](CoinMarginedFuturesApi.md#create_position_margin_v1) | **POST** /dapi/v1/positionMargin | Modify Isolated Position Margin(TRADE)
-[**create_position_side_dual_v1**](CoinMarginedFuturesApi.md#create_position_side_dual_v1) | **POST** /dapi/v1/positionSide/dual | Change Position Mode(TRADE)
-[**delete_all_open_orders_v1**](CoinMarginedFuturesApi.md#delete_all_open_orders_v1) | **DELETE** /dapi/v1/allOpenOrders | Cancel All Open Orders(TRADE)
-[**delete_batch_orders_v1**](CoinMarginedFuturesApi.md#delete_batch_orders_v1) | **DELETE** /dapi/v1/batchOrders | Cancel Multiple Orders(TRADE)
-[**delete_listen_key_v1**](CoinMarginedFuturesApi.md#delete_listen_key_v1) | **DELETE** /dapi/v1/listenKey | Close User Data Stream(USER_STREAM)
-[**delete_order_v1**](CoinMarginedFuturesApi.md#delete_order_v1) | **DELETE** /dapi/v1/order | Cancel Order (TRADE)
-[**get_account_v1**](CoinMarginedFuturesApi.md#get_account_v1) | **GET** /dapi/v1/account | Account Information (USER_DATA)
-[**get_adl_quantile_v1**](CoinMarginedFuturesApi.md#get_adl_quantile_v1) | **GET** /dapi/v1/adlQuantile | Position ADL Quantile Estimation(USER_DATA)
-[**get_agg_trades_v1**](CoinMarginedFuturesApi.md#get_agg_trades_v1) | **GET** /dapi/v1/aggTrades | Compressed/Aggregate Trades List
-[**get_all_orders_v1**](CoinMarginedFuturesApi.md#get_all_orders_v1) | **GET** /dapi/v1/allOrders | All Orders (USER_DATA)
-[**get_balance_v1**](CoinMarginedFuturesApi.md#get_balance_v1) | **GET** /dapi/v1/balance | Futures Account Balance (USER_DATA)
-[**get_commission_rate_v1**](CoinMarginedFuturesApi.md#get_commission_rate_v1) | **GET** /dapi/v1/commissionRate | User Commission Rate (USER_DATA)
-[**get_constituents_v1**](CoinMarginedFuturesApi.md#get_constituents_v1) | **GET** /dapi/v1/constituents | Query Index Price Constituents
-[**get_continuous_klines_v1**](CoinMarginedFuturesApi.md#get_continuous_klines_v1) | **GET** /dapi/v1/continuousKlines | Continuous Contract Kline/Candlestick Data
-[**get_depth_v1**](CoinMarginedFuturesApi.md#get_depth_v1) | **GET** /dapi/v1/depth | Order Book
-[**get_exchange_info_v1**](CoinMarginedFuturesApi.md#get_exchange_info_v1) | **GET** /dapi/v1/exchangeInfo | Exchange Information
-[**get_force_orders_v1**](CoinMarginedFuturesApi.md#get_force_orders_v1) | **GET** /dapi/v1/forceOrders | User&#39;s Force Orders(USER_DATA)
-[**get_funding_info_v1**](CoinMarginedFuturesApi.md#get_funding_info_v1) | **GET** /dapi/v1/fundingInfo | Get Funding Rate Info
-[**get_funding_rate_v1**](CoinMarginedFuturesApi.md#get_funding_rate_v1) | **GET** /dapi/v1/fundingRate | Get Funding Rate History of Perpetual Futures
-[**get_futures_data_basis**](CoinMarginedFuturesApi.md#get_futures_data_basis) | **GET** /futures/data/basis | Basis
-[**get_futures_data_global_long_short_account_ratio**](CoinMarginedFuturesApi.md#get_futures_data_global_long_short_account_ratio) | **GET** /futures/data/globalLongShortAccountRatio | Long/Short Ratio
-[**get_futures_data_open_interest_hist**](CoinMarginedFuturesApi.md#get_futures_data_open_interest_hist) | **GET** /futures/data/openInterestHist | Open Interest Statistics
-[**get_futures_data_taker_buy_sell_vol**](CoinMarginedFuturesApi.md#get_futures_data_taker_buy_sell_vol) | **GET** /futures/data/takerBuySellVol | Taker Buy/Sell Volume
-[**get_futures_data_top_long_short_account_ratio**](CoinMarginedFuturesApi.md#get_futures_data_top_long_short_account_ratio) | **GET** /futures/data/topLongShortAccountRatio | Top Trader Long/Short Ratio (Accounts)
-[**get_futures_data_top_long_short_position_ratio**](CoinMarginedFuturesApi.md#get_futures_data_top_long_short_position_ratio) | **GET** /futures/data/topLongShortPositionRatio | Top Trader Long/Short Ratio (Positions)
-[**get_historical_trades_v1**](CoinMarginedFuturesApi.md#get_historical_trades_v1) | **GET** /dapi/v1/historicalTrades | Old Trades Lookup(MARKET_DATA)
-[**get_income_asyn_id_v1**](CoinMarginedFuturesApi.md#get_income_asyn_id_v1) | **GET** /dapi/v1/income/asyn/id | Get Futures Transaction History Download Link by Id (USER_DATA)
-[**get_income_asyn_v1**](CoinMarginedFuturesApi.md#get_income_asyn_v1) | **GET** /dapi/v1/income/asyn | Get Download Id For Futures Transaction History(USER_DATA)
-[**get_income_v1**](CoinMarginedFuturesApi.md#get_income_v1) | **GET** /dapi/v1/income | Get Income History(USER_DATA)
-[**get_index_price_klines_v1**](CoinMarginedFuturesApi.md#get_index_price_klines_v1) | **GET** /dapi/v1/indexPriceKlines | Index Price Kline/Candlestick Data
-[**get_klines_v1**](CoinMarginedFuturesApi.md#get_klines_v1) | **GET** /dapi/v1/klines | Kline/Candlestick Data
-[**get_leverage_bracket_v1**](CoinMarginedFuturesApi.md#get_leverage_bracket_v1) | **GET** /dapi/v1/leverageBracket | Notional Bracket for Pair(USER_DATA)
-[**get_leverage_bracket_v2**](CoinMarginedFuturesApi.md#get_leverage_bracket_v2) | **GET** /dapi/v2/leverageBracket | Notional Bracket for Symbol(USER_DATA)
-[**get_mark_price_klines_v1**](CoinMarginedFuturesApi.md#get_mark_price_klines_v1) | **GET** /dapi/v1/markPriceKlines | Mark Price Kline/Candlestick Data
-[**get_open_interest_v1**](CoinMarginedFuturesApi.md#get_open_interest_v1) | **GET** /dapi/v1/openInterest | Open Interest
-[**get_open_order_v1**](CoinMarginedFuturesApi.md#get_open_order_v1) | **GET** /dapi/v1/openOrder | Query Current Open Order(USER_DATA)
-[**get_open_orders_v1**](CoinMarginedFuturesApi.md#get_open_orders_v1) | **GET** /dapi/v1/openOrders | Current All Open Orders (USER_DATA)
-[**get_order_amendment_v1**](CoinMarginedFuturesApi.md#get_order_amendment_v1) | **GET** /dapi/v1/orderAmendment | Get Order Modify History (USER_DATA)
-[**get_order_asyn_id_v1**](CoinMarginedFuturesApi.md#get_order_asyn_id_v1) | **GET** /dapi/v1/order/asyn/id | Get Futures Order History Download Link by Id (USER_DATA)
-[**get_order_asyn_v1**](CoinMarginedFuturesApi.md#get_order_asyn_v1) | **GET** /dapi/v1/order/asyn | Get Download Id For Futures Order History (USER_DATA)
-[**get_order_v1**](CoinMarginedFuturesApi.md#get_order_v1) | **GET** /dapi/v1/order | Query Order (USER_DATA)
-[**get_ping_v1**](CoinMarginedFuturesApi.md#get_ping_v1) | **GET** /dapi/v1/ping | Test Connectivity
-[**get_pm_account_info_v1**](CoinMarginedFuturesApi.md#get_pm_account_info_v1) | **GET** /dapi/v1/pmAccountInfo | Classic Portfolio Margin Account Information (USER_DATA)
-[**get_position_margin_history_v1**](CoinMarginedFuturesApi.md#get_position_margin_history_v1) | **GET** /dapi/v1/positionMargin/history | Get Position Margin Change History(TRADE)
-[**get_position_risk_v1**](CoinMarginedFuturesApi.md#get_position_risk_v1) | **GET** /dapi/v1/positionRisk | Position Information(USER_DATA)
-[**get_position_side_dual_v1**](CoinMarginedFuturesApi.md#get_position_side_dual_v1) | **GET** /dapi/v1/positionSide/dual | Get Current Position Mode(USER_DATA)
-[**get_premium_index_klines_v1**](CoinMarginedFuturesApi.md#get_premium_index_klines_v1) | **GET** /dapi/v1/premiumIndexKlines | Premium index Kline Data
-[**get_premium_index_v1**](CoinMarginedFuturesApi.md#get_premium_index_v1) | **GET** /dapi/v1/premiumIndex | Index Price and Mark Price
-[**get_ticker24hr_v1**](CoinMarginedFuturesApi.md#get_ticker24hr_v1) | **GET** /dapi/v1/ticker/24hr | 24hr Ticker Price Change Statistics
-[**get_ticker_book_ticker_v1**](CoinMarginedFuturesApi.md#get_ticker_book_ticker_v1) | **GET** /dapi/v1/ticker/bookTicker | Symbol Order Book Ticker
-[**get_ticker_price_v1**](CoinMarginedFuturesApi.md#get_ticker_price_v1) | **GET** /dapi/v1/ticker/price | Symbol Price Ticker
-[**get_time_v1**](CoinMarginedFuturesApi.md#get_time_v1) | **GET** /dapi/v1/time | Check Server time
-[**get_trade_asyn_id_v1**](CoinMarginedFuturesApi.md#get_trade_asyn_id_v1) | **GET** /dapi/v1/trade/asyn/id | Get Futures Trade Download Link by Id(USER_DATA)
-[**get_trade_asyn_v1**](CoinMarginedFuturesApi.md#get_trade_asyn_v1) | **GET** /dapi/v1/trade/asyn | Get Download Id For Futures Trade History (USER_DATA)
-[**get_trades_v1**](CoinMarginedFuturesApi.md#get_trades_v1) | **GET** /dapi/v1/trades | Recent Trades List
-[**get_user_trades_v1**](CoinMarginedFuturesApi.md#get_user_trades_v1) | **GET** /dapi/v1/userTrades | Account Trade List (USER_DATA)
-[**update_batch_orders_v1**](CoinMarginedFuturesApi.md#update_batch_orders_v1) | **PUT** /dapi/v1/batchOrders | Modify Multiple Orders(TRADE)
-[**update_listen_key_v1**](CoinMarginedFuturesApi.md#update_listen_key_v1) | **PUT** /dapi/v1/listenKey | Keepalive User Data Stream (USER_STREAM)
-[**update_order_v1**](CoinMarginedFuturesApi.md#update_order_v1) | **PUT** /dapi/v1/order | Modify Order (TRADE)
+[**create_batch_orders_v1**](FuturesApi.md#create_batch_orders_v1) | **POST** /dapi/v1/batchOrders | Place Multiple Orders(TRADE)
+[**create_countdown_cancel_all_v1**](FuturesApi.md#create_countdown_cancel_all_v1) | **POST** /dapi/v1/countdownCancelAll | Auto-Cancel All Open Orders (TRADE)
+[**create_leverage_v1**](FuturesApi.md#create_leverage_v1) | **POST** /dapi/v1/leverage | Change Initial Leverage (TRADE)
+[**create_listen_key_v1**](FuturesApi.md#create_listen_key_v1) | **POST** /dapi/v1/listenKey | Start User Data Stream (USER_STREAM)
+[**create_margin_type_v1**](FuturesApi.md#create_margin_type_v1) | **POST** /dapi/v1/marginType | Change Margin Type (TRADE)
+[**create_order_v1**](FuturesApi.md#create_order_v1) | **POST** /dapi/v1/order | New Order (TRADE)
+[**create_position_margin_v1**](FuturesApi.md#create_position_margin_v1) | **POST** /dapi/v1/positionMargin | Modify Isolated Position Margin(TRADE)
+[**create_position_side_dual_v1**](FuturesApi.md#create_position_side_dual_v1) | **POST** /dapi/v1/positionSide/dual | Change Position Mode(TRADE)
+[**delete_all_open_orders_v1**](FuturesApi.md#delete_all_open_orders_v1) | **DELETE** /dapi/v1/allOpenOrders | Cancel All Open Orders(TRADE)
+[**delete_batch_orders_v1**](FuturesApi.md#delete_batch_orders_v1) | **DELETE** /dapi/v1/batchOrders | Cancel Multiple Orders(TRADE)
+[**delete_listen_key_v1**](FuturesApi.md#delete_listen_key_v1) | **DELETE** /dapi/v1/listenKey | Close User Data Stream(USER_STREAM)
+[**delete_order_v1**](FuturesApi.md#delete_order_v1) | **DELETE** /dapi/v1/order | Cancel Order (TRADE)
+[**get_account_v1**](FuturesApi.md#get_account_v1) | **GET** /dapi/v1/account | Account Information (USER_DATA)
+[**get_adl_quantile_v1**](FuturesApi.md#get_adl_quantile_v1) | **GET** /dapi/v1/adlQuantile | Position ADL Quantile Estimation(USER_DATA)
+[**get_agg_trades_v1**](FuturesApi.md#get_agg_trades_v1) | **GET** /dapi/v1/aggTrades | Compressed/Aggregate Trades List
+[**get_all_orders_v1**](FuturesApi.md#get_all_orders_v1) | **GET** /dapi/v1/allOrders | All Orders (USER_DATA)
+[**get_balance_v1**](FuturesApi.md#get_balance_v1) | **GET** /dapi/v1/balance | Futures Account Balance (USER_DATA)
+[**get_commission_rate_v1**](FuturesApi.md#get_commission_rate_v1) | **GET** /dapi/v1/commissionRate | User Commission Rate (USER_DATA)
+[**get_constituents_v1**](FuturesApi.md#get_constituents_v1) | **GET** /dapi/v1/constituents | Query Index Price Constituents
+[**get_continuous_klines_v1**](FuturesApi.md#get_continuous_klines_v1) | **GET** /dapi/v1/continuousKlines | Continuous Contract Kline/Candlestick Data
+[**get_depth_v1**](FuturesApi.md#get_depth_v1) | **GET** /dapi/v1/depth | Order Book
+[**get_exchange_info_v1**](FuturesApi.md#get_exchange_info_v1) | **GET** /dapi/v1/exchangeInfo | Exchange Information
+[**get_force_orders_v1**](FuturesApi.md#get_force_orders_v1) | **GET** /dapi/v1/forceOrders | User&#39;s Force Orders(USER_DATA)
+[**get_funding_info_v1**](FuturesApi.md#get_funding_info_v1) | **GET** /dapi/v1/fundingInfo | Get Funding Rate Info
+[**get_funding_rate_v1**](FuturesApi.md#get_funding_rate_v1) | **GET** /dapi/v1/fundingRate | Get Funding Rate History of Perpetual Futures
+[**get_futures_data_basis**](FuturesApi.md#get_futures_data_basis) | **GET** /futures/data/basis | Basis
+[**get_futures_data_global_long_short_account_ratio**](FuturesApi.md#get_futures_data_global_long_short_account_ratio) | **GET** /futures/data/globalLongShortAccountRatio | Long/Short Ratio
+[**get_futures_data_open_interest_hist**](FuturesApi.md#get_futures_data_open_interest_hist) | **GET** /futures/data/openInterestHist | Open Interest Statistics
+[**get_futures_data_taker_buy_sell_vol**](FuturesApi.md#get_futures_data_taker_buy_sell_vol) | **GET** /futures/data/takerBuySellVol | Taker Buy/Sell Volume
+[**get_futures_data_top_long_short_account_ratio**](FuturesApi.md#get_futures_data_top_long_short_account_ratio) | **GET** /futures/data/topLongShortAccountRatio | Top Trader Long/Short Ratio (Accounts)
+[**get_futures_data_top_long_short_position_ratio**](FuturesApi.md#get_futures_data_top_long_short_position_ratio) | **GET** /futures/data/topLongShortPositionRatio | Top Trader Long/Short Ratio (Positions)
+[**get_historical_trades_v1**](FuturesApi.md#get_historical_trades_v1) | **GET** /dapi/v1/historicalTrades | Old Trades Lookup(MARKET_DATA)
+[**get_income_asyn_id_v1**](FuturesApi.md#get_income_asyn_id_v1) | **GET** /dapi/v1/income/asyn/id | Get Futures Transaction History Download Link by Id (USER_DATA)
+[**get_income_asyn_v1**](FuturesApi.md#get_income_asyn_v1) | **GET** /dapi/v1/income/asyn | Get Download Id For Futures Transaction History(USER_DATA)
+[**get_income_v1**](FuturesApi.md#get_income_v1) | **GET** /dapi/v1/income | Get Income History(USER_DATA)
+[**get_index_price_klines_v1**](FuturesApi.md#get_index_price_klines_v1) | **GET** /dapi/v1/indexPriceKlines | Index Price Kline/Candlestick Data
+[**get_klines_v1**](FuturesApi.md#get_klines_v1) | **GET** /dapi/v1/klines | Kline/Candlestick Data
+[**get_leverage_bracket_v1**](FuturesApi.md#get_leverage_bracket_v1) | **GET** /dapi/v1/leverageBracket | Notional Bracket for Pair(USER_DATA)
+[**get_leverage_bracket_v2**](FuturesApi.md#get_leverage_bracket_v2) | **GET** /dapi/v2/leverageBracket | Notional Bracket for Symbol(USER_DATA)
+[**get_mark_price_klines_v1**](FuturesApi.md#get_mark_price_klines_v1) | **GET** /dapi/v1/markPriceKlines | Mark Price Kline/Candlestick Data
+[**get_open_interest_v1**](FuturesApi.md#get_open_interest_v1) | **GET** /dapi/v1/openInterest | Open Interest
+[**get_open_order_v1**](FuturesApi.md#get_open_order_v1) | **GET** /dapi/v1/openOrder | Query Current Open Order(USER_DATA)
+[**get_open_orders_v1**](FuturesApi.md#get_open_orders_v1) | **GET** /dapi/v1/openOrders | Current All Open Orders (USER_DATA)
+[**get_order_amendment_v1**](FuturesApi.md#get_order_amendment_v1) | **GET** /dapi/v1/orderAmendment | Get Order Modify History (USER_DATA)
+[**get_order_asyn_id_v1**](FuturesApi.md#get_order_asyn_id_v1) | **GET** /dapi/v1/order/asyn/id | Get Futures Order History Download Link by Id (USER_DATA)
+[**get_order_asyn_v1**](FuturesApi.md#get_order_asyn_v1) | **GET** /dapi/v1/order/asyn | Get Download Id For Futures Order History (USER_DATA)
+[**get_order_v1**](FuturesApi.md#get_order_v1) | **GET** /dapi/v1/order | Query Order (USER_DATA)
+[**get_ping_v1**](FuturesApi.md#get_ping_v1) | **GET** /dapi/v1/ping | Test Connectivity
+[**get_pm_account_info_v1**](FuturesApi.md#get_pm_account_info_v1) | **GET** /dapi/v1/pmAccountInfo | Classic Portfolio Margin Account Information (USER_DATA)
+[**get_position_margin_history_v1**](FuturesApi.md#get_position_margin_history_v1) | **GET** /dapi/v1/positionMargin/history | Get Position Margin Change History(TRADE)
+[**get_position_risk_v1**](FuturesApi.md#get_position_risk_v1) | **GET** /dapi/v1/positionRisk | Position Information(USER_DATA)
+[**get_position_side_dual_v1**](FuturesApi.md#get_position_side_dual_v1) | **GET** /dapi/v1/positionSide/dual | Get Current Position Mode(USER_DATA)
+[**get_premium_index_klines_v1**](FuturesApi.md#get_premium_index_klines_v1) | **GET** /dapi/v1/premiumIndexKlines | Premium index Kline Data
+[**get_premium_index_v1**](FuturesApi.md#get_premium_index_v1) | **GET** /dapi/v1/premiumIndex | Index Price and Mark Price
+[**get_ticker24hr_v1**](FuturesApi.md#get_ticker24hr_v1) | **GET** /dapi/v1/ticker/24hr | 24hr Ticker Price Change Statistics
+[**get_ticker_book_ticker_v1**](FuturesApi.md#get_ticker_book_ticker_v1) | **GET** /dapi/v1/ticker/bookTicker | Symbol Order Book Ticker
+[**get_ticker_price_v1**](FuturesApi.md#get_ticker_price_v1) | **GET** /dapi/v1/ticker/price | Symbol Price Ticker
+[**get_time_v1**](FuturesApi.md#get_time_v1) | **GET** /dapi/v1/time | Check Server time
+[**get_trade_asyn_id_v1**](FuturesApi.md#get_trade_asyn_id_v1) | **GET** /dapi/v1/trade/asyn/id | Get Futures Trade Download Link by Id(USER_DATA)
+[**get_trade_asyn_v1**](FuturesApi.md#get_trade_asyn_v1) | **GET** /dapi/v1/trade/asyn | Get Download Id For Futures Trade History (USER_DATA)
+[**get_trades_v1**](FuturesApi.md#get_trades_v1) | **GET** /dapi/v1/trades | Recent Trades List
+[**get_user_trades_v1**](FuturesApi.md#get_user_trades_v1) | **GET** /dapi/v1/userTrades | Account Trade List (USER_DATA)
+[**update_batch_orders_v1**](FuturesApi.md#update_batch_orders_v1) | **PUT** /dapi/v1/batchOrders | Modify Multiple Orders(TRADE)
+[**update_listen_key_v1**](FuturesApi.md#update_listen_key_v1) | **PUT** /dapi/v1/listenKey | Keepalive User Data Stream (USER_STREAM)
+[**update_order_v1**](FuturesApi.md#update_order_v1) | **PUT** /dapi/v1/order | Modify Order (TRADE)
 
 
 # **create_batch_orders_v1**
@@ -110,7 +110,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     batch_orders = [binance.cmfutures.CmfuturesCreateBatchOrderV1ReqBatchOrdersItem()] # List[CmfuturesCreateBatchOrderV1ReqBatchOrdersItem] | 
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
@@ -118,10 +118,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Place Multiple Orders(TRADE)
         api_response = api_instance.create_batch_orders_v1(batch_orders, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->create_batch_orders_v1:\n")
+        print("The response of FuturesApi->create_batch_orders_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->create_batch_orders_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->create_batch_orders_v1: %s\n" % e)
 ```
 
 
@@ -196,7 +196,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     countdown_time = 56 # int | 
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
@@ -205,10 +205,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Auto-Cancel All Open Orders (TRADE)
         api_response = api_instance.create_countdown_cancel_all_v1(countdown_time, symbol, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->create_countdown_cancel_all_v1:\n")
+        print("The response of FuturesApi->create_countdown_cancel_all_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->create_countdown_cancel_all_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->create_countdown_cancel_all_v1: %s\n" % e)
 ```
 
 
@@ -285,7 +285,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     leverage = 56 # int | 
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
@@ -294,10 +294,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Change Initial Leverage (TRADE)
         api_response = api_instance.create_leverage_v1(leverage, symbol, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->create_leverage_v1:\n")
+        print("The response of FuturesApi->create_leverage_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->create_leverage_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->create_leverage_v1: %s\n" % e)
 ```
 
 
@@ -373,15 +373,15 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
 
     try:
         # Start User Data Stream (USER_STREAM)
         api_response = api_instance.create_listen_key_v1()
-        print("The response of CoinMarginedFuturesApi->create_listen_key_v1:\n")
+        print("The response of FuturesApi->create_listen_key_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->create_listen_key_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->create_listen_key_v1: %s\n" % e)
 ```
 
 
@@ -452,7 +452,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     margin_type = '' # str |  (default to '')
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
@@ -461,10 +461,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Change Margin Type (TRADE)
         api_response = api_instance.create_margin_type_v1(margin_type, symbol, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->create_margin_type_v1:\n")
+        print("The response of FuturesApi->create_margin_type_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->create_margin_type_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->create_margin_type_v1: %s\n" % e)
 ```
 
 
@@ -540,7 +540,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     side = '' # str |  (default to '')
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
@@ -565,10 +565,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # New Order (TRADE)
         api_response = api_instance.create_order_v1(side, symbol, timestamp, type, activation_price=activation_price, callback_rate=callback_rate, close_position=close_position, new_client_order_id=new_client_order_id, new_order_resp_type=new_order_resp_type, position_side=position_side, price=price, price_match=price_match, price_protect=price_protect, quantity=quantity, recv_window=recv_window, reduce_only=reduce_only, self_trade_prevention_mode=self_trade_prevention_mode, stop_price=stop_price, time_in_force=time_in_force, working_type=working_type)
-        print("The response of CoinMarginedFuturesApi->create_order_v1:\n")
+        print("The response of FuturesApi->create_order_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->create_order_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->create_order_v1: %s\n" % e)
 ```
 
 
@@ -660,7 +660,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     amount = '' # str |  (default to '')
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
@@ -671,10 +671,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Modify Isolated Position Margin(TRADE)
         api_response = api_instance.create_position_margin_v1(amount, symbol, timestamp, type, position_side=position_side, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->create_position_margin_v1:\n")
+        print("The response of FuturesApi->create_position_margin_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->create_position_margin_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->create_position_margin_v1: %s\n" % e)
 ```
 
 
@@ -752,7 +752,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     dual_side_position = '' # str |  (default to '')
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
@@ -760,10 +760,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Change Position Mode(TRADE)
         api_response = api_instance.create_position_side_dual_v1(dual_side_position, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->create_position_side_dual_v1:\n")
+        print("The response of FuturesApi->create_position_side_dual_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->create_position_side_dual_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->create_position_side_dual_v1: %s\n" % e)
 ```
 
 
@@ -838,7 +838,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
@@ -846,10 +846,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Cancel All Open Orders(TRADE)
         api_response = api_instance.delete_all_open_orders_v1(symbol, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->delete_all_open_orders_v1:\n")
+        print("The response of FuturesApi->delete_all_open_orders_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->delete_all_open_orders_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->delete_all_open_orders_v1: %s\n" % e)
 ```
 
 
@@ -924,7 +924,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
     order_id_list = [56] # List[int] | max length 10 <br/> e.g. [1234567,2345678] (optional)
@@ -934,10 +934,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Cancel Multiple Orders(TRADE)
         api_response = api_instance.delete_batch_orders_v1(symbol, timestamp, order_id_list=order_id_list, orig_client_order_id_list=orig_client_order_id_list, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->delete_batch_orders_v1:\n")
+        print("The response of FuturesApi->delete_batch_orders_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->delete_batch_orders_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->delete_batch_orders_v1: %s\n" % e)
 ```
 
 
@@ -1013,15 +1013,15 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
 
     try:
         # Close User Data Stream(USER_STREAM)
         api_response = api_instance.delete_listen_key_v1()
-        print("The response of CoinMarginedFuturesApi->delete_listen_key_v1:\n")
+        print("The response of FuturesApi->delete_listen_key_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->delete_listen_key_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->delete_listen_key_v1: %s\n" % e)
 ```
 
 
@@ -1091,7 +1091,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
     order_id = 56 # int |  (optional)
@@ -1101,10 +1101,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Cancel Order (TRADE)
         api_response = api_instance.delete_order_v1(symbol, timestamp, order_id=order_id, orig_client_order_id=orig_client_order_id, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->delete_order_v1:\n")
+        print("The response of FuturesApi->delete_order_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->delete_order_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->delete_order_v1: %s\n" % e)
 ```
 
 
@@ -1181,17 +1181,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
 
     try:
         # Account Information (USER_DATA)
         api_response = api_instance.get_account_v1(timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_account_v1:\n")
+        print("The response of FuturesApi->get_account_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_account_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_account_v1: %s\n" % e)
 ```
 
 
@@ -1265,7 +1265,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     symbol = '' # str |  (optional) (default to '')
     recv_window = 56 # int |  (optional)
@@ -1273,10 +1273,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Position ADL Quantile Estimation(USER_DATA)
         api_response = api_instance.get_adl_quantile_v1(timestamp, symbol=symbol, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_adl_quantile_v1:\n")
+        print("The response of FuturesApi->get_adl_quantile_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_adl_quantile_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_adl_quantile_v1: %s\n" % e)
 ```
 
 
@@ -1339,7 +1339,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     from_id = 56 # int | ID to get aggregate trades from INCLUSIVE. (optional)
     start_time = 56 # int | Timestamp in ms to get aggregate trades from INCLUSIVE. (optional)
@@ -1349,10 +1349,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Compressed/Aggregate Trades List
         api_response = api_instance.get_agg_trades_v1(symbol, from_id=from_id, start_time=start_time, end_time=end_time, limit=limit)
-        print("The response of CoinMarginedFuturesApi->get_agg_trades_v1:\n")
+        print("The response of FuturesApi->get_agg_trades_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_agg_trades_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_agg_trades_v1: %s\n" % e)
 ```
 
 
@@ -1429,7 +1429,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     symbol = '' # str |  (optional) (default to '')
     pair = '' # str |  (optional) (default to '')
@@ -1442,10 +1442,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # All Orders (USER_DATA)
         api_response = api_instance.get_all_orders_v1(timestamp, symbol=symbol, pair=pair, order_id=order_id, start_time=start_time, end_time=end_time, limit=limit, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_all_orders_v1:\n")
+        print("The response of FuturesApi->get_all_orders_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_all_orders_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_all_orders_v1: %s\n" % e)
 ```
 
 
@@ -1525,17 +1525,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
 
     try:
         # Futures Account Balance (USER_DATA)
         api_response = api_instance.get_balance_v1(timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_balance_v1:\n")
+        print("The response of FuturesApi->get_balance_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_balance_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_balance_v1: %s\n" % e)
 ```
 
 
@@ -1609,7 +1609,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
@@ -1617,10 +1617,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # User Commission Rate (USER_DATA)
         api_response = api_instance.get_commission_rate_v1(symbol, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_commission_rate_v1:\n")
+        print("The response of FuturesApi->get_commission_rate_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_commission_rate_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_commission_rate_v1: %s\n" % e)
 ```
 
 
@@ -1683,16 +1683,16 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
 
     try:
         # Query Index Price Constituents
         api_response = api_instance.get_constituents_v1(symbol)
-        print("The response of CoinMarginedFuturesApi->get_constituents_v1:\n")
+        print("The response of FuturesApi->get_constituents_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_constituents_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_constituents_v1: %s\n" % e)
 ```
 
 
@@ -1754,7 +1754,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     pair = '' # str |  (default to '')
     contract_type = '' # str |  (default to '')
     interval = '' # str |  (default to '')
@@ -1765,10 +1765,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Continuous Contract Kline/Candlestick Data
         api_response = api_instance.get_continuous_klines_v1(pair, contract_type, interval, start_time=start_time, end_time=end_time, limit=limit)
-        print("The response of CoinMarginedFuturesApi->get_continuous_klines_v1:\n")
+        print("The response of FuturesApi->get_continuous_klines_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_continuous_klines_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_continuous_klines_v1: %s\n" % e)
 ```
 
 
@@ -1834,17 +1834,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     limit = 500 # int | Default 500; Valid limits:[5, 10, 20, 50, 100, 500, 1000] (optional) (default to 500)
 
     try:
         # Order Book
         api_response = api_instance.get_depth_v1(symbol, limit=limit)
-        print("The response of CoinMarginedFuturesApi->get_depth_v1:\n")
+        print("The response of FuturesApi->get_depth_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_depth_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_depth_v1: %s\n" % e)
 ```
 
 
@@ -1906,15 +1906,15 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
 
     try:
         # Exchange Information
         api_response = api_instance.get_exchange_info_v1()
-        print("The response of CoinMarginedFuturesApi->get_exchange_info_v1:\n")
+        print("The response of FuturesApi->get_exchange_info_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_exchange_info_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_exchange_info_v1: %s\n" % e)
 ```
 
 
@@ -1984,7 +1984,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     symbol = '' # str |  (optional) (default to '')
     auto_close_type = '' # str |  (optional) (default to '')
@@ -1996,10 +1996,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # User's Force Orders(USER_DATA)
         api_response = api_instance.get_force_orders_v1(timestamp, symbol=symbol, auto_close_type=auto_close_type, recv_window=recv_window, limit=limit, start_time=start_time, end_time=end_time)
-        print("The response of CoinMarginedFuturesApi->get_force_orders_v1:\n")
+        print("The response of FuturesApi->get_force_orders_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_force_orders_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_force_orders_v1: %s\n" % e)
 ```
 
 
@@ -2066,15 +2066,15 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
 
     try:
         # Get Funding Rate Info
         api_response = api_instance.get_funding_info_v1()
-        print("The response of CoinMarginedFuturesApi->get_funding_info_v1:\n")
+        print("The response of FuturesApi->get_funding_info_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_funding_info_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_funding_info_v1: %s\n" % e)
 ```
 
 
@@ -2132,7 +2132,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     start_time = 56 # int | Timestamp in ms to get funding rate from INCLUSIVE. (optional)
     end_time = 56 # int | Timestamp in ms to get funding rate  until INCLUSIVE. (optional)
@@ -2141,10 +2141,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Funding Rate History of Perpetual Futures
         api_response = api_instance.get_funding_rate_v1(symbol, start_time=start_time, end_time=end_time, limit=limit)
-        print("The response of CoinMarginedFuturesApi->get_funding_rate_v1:\n")
+        print("The response of FuturesApi->get_funding_rate_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_funding_rate_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_funding_rate_v1: %s\n" % e)
 ```
 
 
@@ -2208,7 +2208,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     pair = '' # str | BTCUSD (default to '')
     contract_type = '' # str | CURRENT_QUARTER, NEXT_QUARTER, PERPETUAL (default to '')
     period = '' # str | &#34;5m&#34;,&#34;15m&#34;,&#34;30m&#34;,&#34;1h&#34;,&#34;2h&#34;,&#34;4h&#34;,&#34;6h&#34;,&#34;12h&#34;,&#34;1d&#34; (default to '')
@@ -2219,10 +2219,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Basis
         api_response = api_instance.get_futures_data_basis(pair, contract_type, period, limit=limit, start_time=start_time, end_time=end_time)
-        print("The response of CoinMarginedFuturesApi->get_futures_data_basis:\n")
+        print("The response of FuturesApi->get_futures_data_basis:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_futures_data_basis: %s\n" % e)
+        print("Exception when calling FuturesApi->get_futures_data_basis: %s\n" % e)
 ```
 
 
@@ -2288,7 +2288,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     pair = '' # str | BTCUSD (default to '')
     period = '' # str | &#34;5m&#34;,&#34;15m&#34;,&#34;30m&#34;,&#34;1h&#34;,&#34;2h&#34;,&#34;4h&#34;,&#34;6h&#34;,&#34;12h&#34;,&#34;1d&#34; (default to '')
     limit = 30 # int | Default 30,Max 500 (optional) (default to 30)
@@ -2298,10 +2298,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Long/Short Ratio
         api_response = api_instance.get_futures_data_global_long_short_account_ratio(pair, period, limit=limit, start_time=start_time, end_time=end_time)
-        print("The response of CoinMarginedFuturesApi->get_futures_data_global_long_short_account_ratio:\n")
+        print("The response of FuturesApi->get_futures_data_global_long_short_account_ratio:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_futures_data_global_long_short_account_ratio: %s\n" % e)
+        print("Exception when calling FuturesApi->get_futures_data_global_long_short_account_ratio: %s\n" % e)
 ```
 
 
@@ -2366,7 +2366,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     pair = '' # str | BTCUSD (default to '')
     contract_type = '' # str | ALL, CURRENT_QUARTER, NEXT_QUARTER, PERPETUAL (default to '')
     period = '' # str | &#34;5m&#34;,&#34;15m&#34;,&#34;30m&#34;,&#34;1h&#34;,&#34;2h&#34;,&#34;4h&#34;,&#34;6h&#34;,&#34;12h&#34;,&#34;1d&#34; (default to '')
@@ -2377,10 +2377,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Open Interest Statistics
         api_response = api_instance.get_futures_data_open_interest_hist(pair, contract_type, period, limit=limit, start_time=start_time, end_time=end_time)
-        print("The response of CoinMarginedFuturesApi->get_futures_data_open_interest_hist:\n")
+        print("The response of FuturesApi->get_futures_data_open_interest_hist:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_futures_data_open_interest_hist: %s\n" % e)
+        print("Exception when calling FuturesApi->get_futures_data_open_interest_hist: %s\n" % e)
 ```
 
 
@@ -2447,7 +2447,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     pair = '' # str | BTCUSD (default to '')
     contract_type = '' # str | ALL, CURRENT_QUARTER, NEXT_QUARTER, PERPETUAL (default to '')
     period = '' # str | &#34;5m&#34;,&#34;15m&#34;,&#34;30m&#34;,&#34;1h&#34;,&#34;2h&#34;,&#34;4h&#34;,&#34;6h&#34;,&#34;12h&#34;,&#34;1d&#34; (default to '')
@@ -2458,10 +2458,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Taker Buy/Sell Volume
         api_response = api_instance.get_futures_data_taker_buy_sell_vol(pair, contract_type, period, limit=limit, start_time=start_time, end_time=end_time)
-        print("The response of CoinMarginedFuturesApi->get_futures_data_taker_buy_sell_vol:\n")
+        print("The response of FuturesApi->get_futures_data_taker_buy_sell_vol:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_futures_data_taker_buy_sell_vol: %s\n" % e)
+        print("Exception when calling FuturesApi->get_futures_data_taker_buy_sell_vol: %s\n" % e)
 ```
 
 
@@ -2530,7 +2530,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     period = '' # str | &#34;5m&#34;,&#34;15m&#34;,&#34;30m&#34;,&#34;1h&#34;,&#34;2h&#34;,&#34;4h&#34;,&#34;6h&#34;,&#34;12h&#34;,&#34;1d&#34; (default to '')
     limit = 30 # int | default 30, max 500 (optional) (default to 30)
@@ -2540,10 +2540,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Top Trader Long/Short Ratio (Accounts)
         api_response = api_instance.get_futures_data_top_long_short_account_ratio(symbol, period, limit=limit, start_time=start_time, end_time=end_time)
-        print("The response of CoinMarginedFuturesApi->get_futures_data_top_long_short_account_ratio:\n")
+        print("The response of FuturesApi->get_futures_data_top_long_short_account_ratio:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_futures_data_top_long_short_account_ratio: %s\n" % e)
+        print("Exception when calling FuturesApi->get_futures_data_top_long_short_account_ratio: %s\n" % e)
 ```
 
 
@@ -2611,7 +2611,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     pair = '' # str | BTCUSD (default to '')
     period = '' # str | &#34;5m&#34;,&#34;15m&#34;,&#34;30m&#34;,&#34;1h&#34;,&#34;2h&#34;,&#34;4h&#34;,&#34;6h&#34;,&#34;12h&#34;,&#34;1d&#34; (default to '')
     limit = 30 # int | Default 30,Max 500 (optional) (default to 30)
@@ -2621,10 +2621,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Top Trader Long/Short Ratio (Positions)
         api_response = api_instance.get_futures_data_top_long_short_position_ratio(pair, period, limit=limit, start_time=start_time, end_time=end_time)
-        print("The response of CoinMarginedFuturesApi->get_futures_data_top_long_short_position_ratio:\n")
+        print("The response of FuturesApi->get_futures_data_top_long_short_position_ratio:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_futures_data_top_long_short_position_ratio: %s\n" % e)
+        print("Exception when calling FuturesApi->get_futures_data_top_long_short_position_ratio: %s\n" % e)
 ```
 
 
@@ -2689,7 +2689,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     limit = 100 # int | Default 100; max 500. (optional) (default to 100)
     from_id = 56 # int | TradeId to fetch from. Default gets most recent trades. (optional)
@@ -2697,10 +2697,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Old Trades Lookup(MARKET_DATA)
         api_response = api_instance.get_historical_trades_v1(symbol, limit=limit, from_id=from_id)
-        print("The response of CoinMarginedFuturesApi->get_historical_trades_v1:\n")
+        print("The response of FuturesApi->get_historical_trades_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_historical_trades_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_historical_trades_v1: %s\n" % e)
 ```
 
 
@@ -2775,7 +2775,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     download_id = '' # str | get by download id api (default to '')
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
@@ -2783,10 +2783,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Futures Transaction History Download Link by Id (USER_DATA)
         api_response = api_instance.get_income_asyn_id_v1(download_id, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_income_asyn_id_v1:\n")
+        print("The response of FuturesApi->get_income_asyn_id_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_income_asyn_id_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_income_asyn_id_v1: %s\n" % e)
 ```
 
 
@@ -2861,7 +2861,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     start_time = 56 # int | Timestamp in ms
     end_time = 56 # int | Timestamp in ms
     timestamp = 56 # int | 
@@ -2870,10 +2870,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Download Id For Futures Transaction History(USER_DATA)
         api_response = api_instance.get_income_asyn_v1(start_time, end_time, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_income_asyn_v1:\n")
+        print("The response of FuturesApi->get_income_asyn_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_income_asyn_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_income_asyn_v1: %s\n" % e)
 ```
 
 
@@ -2949,7 +2949,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     symbol = '' # str |  (optional) (default to '')
     income_type = '' # str | &#34;TRANSFER&#34;,&#34;WELCOME_BONUS&#34;, &#34;FUNDING_FEE&#34;, &#34;REALIZED_PNL&#34;, &#34;COMMISSION&#34;, &#34;INSURANCE_CLEAR&#34;, and &#34;DELIVERED_SETTELMENT&#34; (optional) (default to '')
@@ -2962,10 +2962,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Income History(USER_DATA)
         api_response = api_instance.get_income_v1(timestamp, symbol=symbol, income_type=income_type, start_time=start_time, end_time=end_time, page=page, limit=limit, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_income_v1:\n")
+        print("The response of FuturesApi->get_income_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_income_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_income_v1: %s\n" % e)
 ```
 
 
@@ -3033,7 +3033,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     pair = '' # str |  (default to '')
     interval = '' # str |  (default to '')
     start_time = 56 # int |  (optional)
@@ -3043,10 +3043,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Index Price Kline/Candlestick Data
         api_response = api_instance.get_index_price_klines_v1(pair, interval, start_time=start_time, end_time=end_time, limit=limit)
-        print("The response of CoinMarginedFuturesApi->get_index_price_klines_v1:\n")
+        print("The response of FuturesApi->get_index_price_klines_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_index_price_klines_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_index_price_klines_v1: %s\n" % e)
 ```
 
 
@@ -3112,7 +3112,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     interval = '' # str |  (default to '')
     start_time = 56 # int |  (optional)
@@ -3122,10 +3122,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Kline/Candlestick Data
         api_response = api_instance.get_klines_v1(symbol, interval, start_time=start_time, end_time=end_time, limit=limit)
-        print("The response of CoinMarginedFuturesApi->get_klines_v1:\n")
+        print("The response of FuturesApi->get_klines_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_klines_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_klines_v1: %s\n" % e)
 ```
 
 
@@ -3202,7 +3202,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     pair = '' # str |  (optional) (default to '')
     recv_window = 56 # int |  (optional)
@@ -3210,10 +3210,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Notional Bracket for Pair(USER_DATA)
         api_response = api_instance.get_leverage_bracket_v1(timestamp, pair=pair, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_leverage_bracket_v1:\n")
+        print("The response of FuturesApi->get_leverage_bracket_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_leverage_bracket_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_leverage_bracket_v1: %s\n" % e)
 ```
 
 
@@ -3288,7 +3288,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     symbol = '' # str |  (optional) (default to '')
     recv_window = 56 # int |  (optional)
@@ -3296,10 +3296,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Notional Bracket for Symbol(USER_DATA)
         api_response = api_instance.get_leverage_bracket_v2(timestamp, symbol=symbol, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_leverage_bracket_v2:\n")
+        print("The response of FuturesApi->get_leverage_bracket_v2:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_leverage_bracket_v2: %s\n" % e)
+        print("Exception when calling FuturesApi->get_leverage_bracket_v2: %s\n" % e)
 ```
 
 
@@ -3363,7 +3363,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     interval = '' # str |  (default to '')
     start_time = 56 # int |  (optional)
@@ -3373,10 +3373,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Mark Price Kline/Candlestick Data
         api_response = api_instance.get_mark_price_klines_v1(symbol, interval, start_time=start_time, end_time=end_time, limit=limit)
-        print("The response of CoinMarginedFuturesApi->get_mark_price_klines_v1:\n")
+        print("The response of FuturesApi->get_mark_price_klines_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_mark_price_klines_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_mark_price_klines_v1: %s\n" % e)
 ```
 
 
@@ -3441,16 +3441,16 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
 
     try:
         # Open Interest
         api_response = api_instance.get_open_interest_v1(symbol)
-        print("The response of CoinMarginedFuturesApi->get_open_interest_v1:\n")
+        print("The response of FuturesApi->get_open_interest_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_open_interest_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_open_interest_v1: %s\n" % e)
 ```
 
 
@@ -3523,7 +3523,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
     order_id = 56 # int |  (optional)
@@ -3533,10 +3533,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Query Current Open Order(USER_DATA)
         api_response = api_instance.get_open_order_v1(symbol, timestamp, order_id=order_id, orig_client_order_id=orig_client_order_id, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_open_order_v1:\n")
+        print("The response of FuturesApi->get_open_order_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_open_order_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_open_order_v1: %s\n" % e)
 ```
 
 
@@ -3613,7 +3613,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     symbol = '' # str |  (optional) (default to '')
     pair = '' # str |  (optional) (default to '')
@@ -3622,10 +3622,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Current All Open Orders (USER_DATA)
         api_response = api_instance.get_open_orders_v1(timestamp, symbol=symbol, pair=pair, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_open_orders_v1:\n")
+        print("The response of FuturesApi->get_open_orders_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_open_orders_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_open_orders_v1: %s\n" % e)
 ```
 
 
@@ -3701,7 +3701,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
     order_id = 56 # int |  (optional)
@@ -3714,10 +3714,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Order Modify History (USER_DATA)
         api_response = api_instance.get_order_amendment_v1(symbol, timestamp, order_id=order_id, orig_client_order_id=orig_client_order_id, start_time=start_time, end_time=end_time, limit=limit, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_order_amendment_v1:\n")
+        print("The response of FuturesApi->get_order_amendment_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_order_amendment_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_order_amendment_v1: %s\n" % e)
 ```
 
 
@@ -3797,7 +3797,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     download_id = '' # str | get by download id api (default to '')
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
@@ -3805,10 +3805,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Futures Order History Download Link by Id (USER_DATA)
         api_response = api_instance.get_order_asyn_id_v1(download_id, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_order_asyn_id_v1:\n")
+        print("The response of FuturesApi->get_order_asyn_id_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_order_asyn_id_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_order_asyn_id_v1: %s\n" % e)
 ```
 
 
@@ -3883,7 +3883,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     start_time = 56 # int | Timestamp in ms
     end_time = 56 # int | Timestamp in ms
     timestamp = 56 # int | 
@@ -3892,10 +3892,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Download Id For Futures Order History (USER_DATA)
         api_response = api_instance.get_order_asyn_v1(start_time, end_time, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_order_asyn_v1:\n")
+        print("The response of FuturesApi->get_order_asyn_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_order_asyn_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_order_asyn_v1: %s\n" % e)
 ```
 
 
@@ -3971,7 +3971,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
     order_id = 56 # int |  (optional)
@@ -3981,10 +3981,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Query Order (USER_DATA)
         api_response = api_instance.get_order_v1(symbol, timestamp, order_id=order_id, orig_client_order_id=orig_client_order_id, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_order_v1:\n")
+        print("The response of FuturesApi->get_order_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_order_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_order_v1: %s\n" % e)
 ```
 
 
@@ -4048,15 +4048,15 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
 
     try:
         # Test Connectivity
         api_response = api_instance.get_ping_v1()
-        print("The response of CoinMarginedFuturesApi->get_ping_v1:\n")
+        print("The response of FuturesApi->get_ping_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_ping_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_ping_v1: %s\n" % e)
 ```
 
 
@@ -4126,17 +4126,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     asset = '' # str |  (default to '')
     recv_window = 56 # int |  (optional)
 
     try:
         # Classic Portfolio Margin Account Information (USER_DATA)
         api_response = api_instance.get_pm_account_info_v1(asset, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_pm_account_info_v1:\n")
+        print("The response of FuturesApi->get_pm_account_info_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_pm_account_info_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_pm_account_info_v1: %s\n" % e)
 ```
 
 
@@ -4210,7 +4210,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
     type = 56 # int | 1: Add position margin,2: Reduce position margin (optional)
@@ -4222,10 +4222,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Position Margin Change History(TRADE)
         api_response = api_instance.get_position_margin_history_v1(symbol, timestamp, type=type, start_time=start_time, end_time=end_time, limit=limit, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_position_margin_history_v1:\n")
+        print("The response of FuturesApi->get_position_margin_history_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_position_margin_history_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_position_margin_history_v1: %s\n" % e)
 ```
 
 
@@ -4304,7 +4304,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     margin_asset = '' # str |  (optional) (default to '')
     pair = '' # str |  (optional) (default to '')
@@ -4313,10 +4313,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Position Information(USER_DATA)
         api_response = api_instance.get_position_risk_v1(timestamp, margin_asset=margin_asset, pair=pair, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_position_risk_v1:\n")
+        print("The response of FuturesApi->get_position_risk_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_position_risk_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_position_risk_v1: %s\n" % e)
 ```
 
 
@@ -4392,17 +4392,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
 
     try:
         # Get Current Position Mode(USER_DATA)
         api_response = api_instance.get_position_side_dual_v1(timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_position_side_dual_v1:\n")
+        print("The response of FuturesApi->get_position_side_dual_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_position_side_dual_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_position_side_dual_v1: %s\n" % e)
 ```
 
 
@@ -4464,7 +4464,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     interval = '' # str |  (default to '')
     start_time = 56 # int |  (optional)
@@ -4474,10 +4474,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Premium index Kline Data
         api_response = api_instance.get_premium_index_klines_v1(symbol, interval, start_time=start_time, end_time=end_time, limit=limit)
-        print("The response of CoinMarginedFuturesApi->get_premium_index_klines_v1:\n")
+        print("The response of FuturesApi->get_premium_index_klines_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_premium_index_klines_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_premium_index_klines_v1: %s\n" % e)
 ```
 
 
@@ -4542,17 +4542,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (optional) (default to '')
     pair = '' # str |  (optional) (default to '')
 
     try:
         # Index Price and Mark Price
         api_response = api_instance.get_premium_index_v1(symbol=symbol, pair=pair)
-        print("The response of CoinMarginedFuturesApi->get_premium_index_v1:\n")
+        print("The response of FuturesApi->get_premium_index_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_premium_index_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_premium_index_v1: %s\n" % e)
 ```
 
 
@@ -4614,17 +4614,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (optional) (default to '')
     pair = '' # str |  (optional) (default to '')
 
     try:
         # 24hr Ticker Price Change Statistics
         api_response = api_instance.get_ticker24hr_v1(symbol=symbol, pair=pair)
-        print("The response of CoinMarginedFuturesApi->get_ticker24hr_v1:\n")
+        print("The response of FuturesApi->get_ticker24hr_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_ticker24hr_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_ticker24hr_v1: %s\n" % e)
 ```
 
 
@@ -4686,17 +4686,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (optional) (default to '')
     pair = '' # str |  (optional) (default to '')
 
     try:
         # Symbol Order Book Ticker
         api_response = api_instance.get_ticker_book_ticker_v1(symbol=symbol, pair=pair)
-        print("The response of CoinMarginedFuturesApi->get_ticker_book_ticker_v1:\n")
+        print("The response of FuturesApi->get_ticker_book_ticker_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_ticker_book_ticker_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_ticker_book_ticker_v1: %s\n" % e)
 ```
 
 
@@ -4758,17 +4758,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (optional) (default to '')
     pair = '' # str |  (optional) (default to '')
 
     try:
         # Symbol Price Ticker
         api_response = api_instance.get_ticker_price_v1(symbol=symbol, pair=pair)
-        print("The response of CoinMarginedFuturesApi->get_ticker_price_v1:\n")
+        print("The response of FuturesApi->get_ticker_price_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_ticker_price_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_ticker_price_v1: %s\n" % e)
 ```
 
 
@@ -4830,15 +4830,15 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
 
     try:
         # Check Server time
         api_response = api_instance.get_time_v1()
-        print("The response of CoinMarginedFuturesApi->get_time_v1:\n")
+        print("The response of FuturesApi->get_time_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_time_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_time_v1: %s\n" % e)
 ```
 
 
@@ -4908,7 +4908,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     download_id = '' # str | get by download id api (default to '')
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
@@ -4916,10 +4916,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Futures Trade Download Link by Id(USER_DATA)
         api_response = api_instance.get_trade_asyn_id_v1(download_id, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_trade_asyn_id_v1:\n")
+        print("The response of FuturesApi->get_trade_asyn_id_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_trade_asyn_id_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_trade_asyn_id_v1: %s\n" % e)
 ```
 
 
@@ -4994,7 +4994,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     start_time = 56 # int | Timestamp in ms
     end_time = 56 # int | Timestamp in ms
     timestamp = 56 # int | 
@@ -5003,10 +5003,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Get Download Id For Futures Trade History (USER_DATA)
         api_response = api_instance.get_trade_asyn_v1(start_time, end_time, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_trade_asyn_v1:\n")
+        print("The response of FuturesApi->get_trade_asyn_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_trade_asyn_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_trade_asyn_v1: %s\n" % e)
 ```
 
 
@@ -5070,17 +5070,17 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     symbol = '' # str |  (default to '')
     limit = 500 # int | Default 500; max 1000. (optional) (default to 500)
 
     try:
         # Recent Trades List
         api_response = api_instance.get_trades_v1(symbol, limit=limit)
-        print("The response of CoinMarginedFuturesApi->get_trades_v1:\n")
+        print("The response of FuturesApi->get_trades_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_trades_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_trades_v1: %s\n" % e)
 ```
 
 
@@ -5154,7 +5154,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     timestamp = 56 # int | 
     symbol = '' # str |  (optional) (default to '')
     pair = '' # str |  (optional) (default to '')
@@ -5168,10 +5168,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Account Trade List (USER_DATA)
         api_response = api_instance.get_user_trades_v1(timestamp, symbol=symbol, pair=pair, order_id=order_id, start_time=start_time, end_time=end_time, from_id=from_id, limit=limit, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->get_user_trades_v1:\n")
+        print("The response of FuturesApi->get_user_trades_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->get_user_trades_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->get_user_trades_v1: %s\n" % e)
 ```
 
 
@@ -5253,7 +5253,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     batch_orders = [binance.cmfutures.CmfuturesUpdateBatchOrdersV1ReqBatchOrdersItem()] # List[CmfuturesUpdateBatchOrdersV1ReqBatchOrdersItem] | 
     timestamp = 56 # int | 
     recv_window = 56 # int |  (optional)
@@ -5261,10 +5261,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Modify Multiple Orders(TRADE)
         api_response = api_instance.update_batch_orders_v1(batch_orders, timestamp, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->update_batch_orders_v1:\n")
+        print("The response of FuturesApi->update_batch_orders_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->update_batch_orders_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->update_batch_orders_v1: %s\n" % e)
 ```
 
 
@@ -5338,15 +5338,15 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
 
     try:
         # Keepalive User Data Stream (USER_STREAM)
         api_response = api_instance.update_listen_key_v1()
-        print("The response of CoinMarginedFuturesApi->update_listen_key_v1:\n")
+        print("The response of FuturesApi->update_listen_key_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->update_listen_key_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->update_listen_key_v1: %s\n" % e)
 ```
 
 
@@ -5416,7 +5416,7 @@ configuration = binance.cmfutures.Configuration(
 # Enter a context with an instance of the API client
 with binance.cmfutures.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = binance.cmfutures.CoinMarginedFuturesApi(api_client)
+    api_instance = binance.cmfutures.FuturesApi(api_client)
     side = '' # str |  (default to '')
     symbol = '' # str |  (default to '')
     timestamp = 56 # int | 
@@ -5430,10 +5430,10 @@ with binance.cmfutures.ApiClient(configuration) as api_client:
     try:
         # Modify Order (TRADE)
         api_response = api_instance.update_order_v1(side, symbol, timestamp, order_id=order_id, orig_client_order_id=orig_client_order_id, price=price, price_match=price_match, quantity=quantity, recv_window=recv_window)
-        print("The response of CoinMarginedFuturesApi->update_order_v1:\n")
+        print("The response of FuturesApi->update_order_v1:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling CoinMarginedFuturesApi->update_order_v1: %s\n" % e)
+        print("Exception when calling FuturesApi->update_order_v1: %s\n" % e)
 ```
 
 
