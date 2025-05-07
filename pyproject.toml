@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "openxapi-binance"
-version = "0.2.2"
+version = "0.3.0"
 description = "Python client for Binance API"
 authors = ["OpenXAPI"]
 license = "MIT"

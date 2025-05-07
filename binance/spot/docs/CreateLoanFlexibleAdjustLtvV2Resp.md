@@ -1,0 +1,34 @@
+# CreateLoanFlexibleAdjustLtvV2Resp
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**adjustment_amount** | **str** |  | [optional] 
+**collateral_coin** | **str** |  | [optional] 
+**current_ltv** | **str** |  | [optional] 
+**direction** | **str** |  | [optional] 
+**loan_coin** | **str** |  | [optional] 
+**status** | **str** |  | [optional] 
+
+## Example
+
+```python
+from binance.spot.models.create_loan_flexible_adjust_ltv_v2_resp import CreateLoanFlexibleAdjustLtvV2Resp
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of CreateLoanFlexibleAdjustLtvV2Resp from a JSON string
+create_loan_flexible_adjust_ltv_v2_resp_instance = CreateLoanFlexibleAdjustLtvV2Resp.from_json(json)
+# print the JSON string representation of the object
+print(CreateLoanFlexibleAdjustLtvV2Resp.to_json())
+
+# convert the object into a dict
+create_loan_flexible_adjust_ltv_v2_resp_dict = create_loan_flexible_adjust_ltv_v2_resp_instance.to_dict()
+# create an instance of CreateLoanFlexibleAdjustLtvV2Resp from a dict
+create_loan_flexible_adjust_ltv_v2_resp_from_dict = CreateLoanFlexibleAdjustLtvV2Resp.from_dict(create_loan_flexible_adjust_ltv_v2_resp_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
